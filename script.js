@@ -1,5 +1,13 @@
 // Menu Toggle para dispositivos móveis
 document.addEventListener('DOMContentLoaded', function() {
+    // Configuração do AOS
+    AOS.init({
+        duration: 800, // Tempo da animação (milissegundos)
+        easing: "ease-in-out", // Tipo de animação
+        once: false, // A animação acontece sempre que o elemento entra na tela
+        mirror: true // A animação reaparece quando rolar para cima
+    });
+
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     

@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Menu de Navegação -->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <div class="container">
             <div class="logo">
                 <a href="#">Simplify Contábil</a>
@@ -36,7 +38,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-right">
                 <h1>Bem-vindo à <span>Simplify Contábil</span></h1>
                 <p>Transformamos sua gestão financeira com estratégias e eficiência.</p>
                 <div class="hero-buttons">
@@ -49,26 +51,26 @@
     <!-- Serviços Section -->
     <section id="servicos" class="services">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2>Nossos Serviços</h2>
                 <p>Oferecemos soluções contábeis completas para atender às necessidades específicas do seu negócio.</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-icon">
                         <i class="fas fa-calculator"></i>
                     </div>
                     <h3>Consultoria e Assessoria Financeira</h3>
                     <p>Oferecemos orientação especializada para micro-empreendedores, auxiliando em questões financeiras, fiscais, tributárias e contábeis.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-icon">
                         <i class="fas fa-file-alt"></i>
                     </div>
                     <h3>Imposto de Renda para Pessoa Física</h3>
                     <p>Envio de declaração, garantindo o cumprimento das obrigações fiscais, otimização de deduções e acompanhamento de restituições.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
@@ -82,10 +84,10 @@
     <!-- Sobre Section -->
     <section id="sobre" class="about">
         <div class="container">
-            <div class="about-image">
+            <div class="about-image" data-aos="fade-right">
                 <img src="imagens/fundo.jpg" alt="Sobre a Simplify Contabil">
             </div>
-            <div class="about-content">
+            <div class="about-content" data-aos="fade-left">
                 <h2>Sobre a Simplify Contábil</h2>
                 <p>A Simplify Contabil nasceu com a missão de transformar a contabilidade em um processo simples e eficiente para empresários e empreendedores.</p>
                 <p>Nossa equipe é formada por profissionais altamente qualificados, comprometidos em oferecer soluções personalizadas que atendam às necessidades específicas de cada cliente.</p>
@@ -106,22 +108,22 @@
     <!-- Equipe Section -->
     <section id="equipe" class="team">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2>Sobre Mim</h2>
                 <p>Conheça a profissional dedicada que trabalha para simplificar a contabilidade do seu negócio.</p>
             </div>
             <div class="team-grid">
-                <div class="team-card">
+                <div class="team-card" data-aos="zoom-in">
                     <div class="team-image">
                         <img src="imagens/Imagem do WhatsApp de 2025-03-28 à(s) 13.24.06_04ee26fb.jpg" alt="Dra. Naiara Cardoso">
                     </div>
                     <div class="team-info">
-                        <h3>Dra. Naiara Cardoso</h3>
+                        <h3>Naiara Cardoso</h3>
                         <p class="team-position">Contadora Chefe & Fundadora</p>
                         <p class="team-bio">Com experiência em contabilidade pública, Naiara fundou a Simplify Contabil com a missão de tornar a gestão contábil simples e acessível para empresas de todos os portes.</p>
                         <div class="team-credentials">
                             <div class="credential"><i class="fas fa-award"></i> CRC-CE 030006/0</div>
-                            <div class="credential"><i class="fas fa-book-open"></i> MBA em Contabilidade Pública - UNOPAR</div>
+                            <div class="credential"><i class="fas fa-book-open"></i> Pós-Graduação em Contabilidade Pública - UNOPAR</div>
                             <div class="credential"><i class="fas fa-briefcase"></i> Especialista em Contabilidade para MEI - Imposto de Renda</div>
                         </div>
                     </div>
@@ -133,12 +135,12 @@
     <!-- Depoimentos Section -->
     <section id="depoimentos" class="testimonials">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2>O que nossos clientes dizem</h2>
                 <p>A satisfação dos nossos clientes é o nosso maior orgulho. Confira alguns depoimentos.</p>
             </div>
             <div class="testimonials-grid">
-                <div class="testimonial-card">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="testimonial-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -152,7 +154,7 @@
                         <p class="author-company">Silva & Associados</p>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="testimonial-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -166,7 +168,7 @@
                         <p class="author-company">Café Aroma</p>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="testimonial-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -186,7 +188,7 @@
 
     <!-- Contato Section -->
     <section id="contato" class="contact">
-        <div class="container" data-aos="zoom-in">
+        <div class="container">
             <h2>Entre em Contato</h2>
             <form id="formulario">
                 <div class="form-group">
@@ -243,10 +245,12 @@
     </footer>
 
     <!-- Botão WhatsApp -->
-    <a href="https://wa.me/558899144483" class="whatsapp-button" target="_blank" rel="noopener" title="Contato via WhatsApp">
+    <a href="https://wa.me/558899144483" class="whatsapp-button" target="_blank" rel="noopener" title="Contato via WhatsApp" data-aos="fade-left">
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
