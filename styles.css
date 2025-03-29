@@ -3,13 +3,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #1e293b;
-    overflow-x: hidden;
     background-color: #f8fafc;
 }
 
@@ -590,6 +598,8 @@ a {
 /* Responsividade */
 @media (max-width: 992px) {
     .container {
+        width: 100%;
+        max-width: 100%;
         padding: 0 15px;
     }
     
@@ -618,7 +628,9 @@ a {
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 10px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
     }
     
     .hero {
@@ -653,15 +665,39 @@ a {
     .menu-toggle {
         display: block;
     }
+
+    .header .container {
+        padding: 15px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .services-grid,
+    .team-grid,
+    .testimonials-grid {
+        padding: 0 15px;
+    }
+
+    .about .container,
+    .testimonials .container,
+    .contact .container {
+        padding: 0 15px;
+    }
 }
 
 @media (max-width: 576px) {
     .container {
-        padding: 0 5px;
+        padding: 0;
+    }
+    
+    .header .container {
+        padding: 10px;
     }
     
     section {
-        padding: 60px 0;
+        padding: 40px 0;
     }
     
     .hero h1 {
@@ -675,7 +711,13 @@ a {
     .services-grid,
     .team-grid,
     .testimonials-grid {
-        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+    
+    .about .container,
+    .testimonials .container,
+    .contact .container {
+        padding: 0 10px;
     }
     
     .whatsapp-button {
@@ -687,6 +729,7 @@ a {
     }
     
     #formulario {
+        margin: 0 10px;
         padding: 20px;
     }
 }
