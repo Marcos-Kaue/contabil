@@ -12,9 +12,6 @@ html, body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #1e293b;
@@ -101,13 +98,13 @@ a {
 
 /* Header e Navegação */
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     background: linear-gradient(135deg, #1e3a8a, #0f172a);
     box-shadow: 0 2px 10px rgba(15, 23, 42, 0.1);
     z-index: 1000;
-    left: 0;
-    right: 0;
 }
 
 .header .container {
@@ -159,8 +156,9 @@ a {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 150px 0;
+    padding: 150px 0 80px;
     color: white;
+    margin-top: 70px;
 }
 
 .hero .container {
@@ -630,16 +628,19 @@ a {
         width: 100%;
         max-width: 100%;
         padding: 0;
+        margin: 0;
     }
     
     .hero {
         background-attachment: scroll;
+        margin-top: 60px;
+        padding: 100px 0 60px;
     }
     
     .nav-menu {
         display: none;
         position: absolute;
-        top: 70px;
+        top: 60px;
         left: 0;
         width: 100%;
         background-color: rgb(12, 16, 122);
@@ -666,57 +667,55 @@ a {
     }
 
     .header .container {
-        padding: 15px;
+        padding: 10px;
     }
 
     section {
-        padding: 60px 0;
+        padding: 40px 0;
     }
 
     .services-grid,
     .team-grid,
     .testimonials-grid {
-        padding: 0 15px;
+        padding: 0;
     }
 
     .about .container,
     .testimonials .container,
     .contact .container {
-        padding: 0 15px;
+        padding: 0;
     }
 }
 
 @media (max-width: 576px) {
     .container {
         padding: 0;
+        margin: 0;
     }
     
     .header .container {
-        padding: 10px;
+        padding: 8px;
     }
     
     section {
-        padding: 40px 0;
+        padding: 30px 0;
     }
     
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-    
-    .section-header h2 {
-        font-size: 2rem;
+    .hero {
+        margin-top: 50px;
+        padding: 80px 0 40px;
     }
     
     .services-grid,
     .team-grid,
     .testimonials-grid {
-        padding: 0 10px;
+        padding: 0;
     }
     
     .about .container,
     .testimonials .container,
     .contact .container {
-        padding: 0 10px;
+        padding: 0;
     }
     
     .whatsapp-button {
@@ -728,7 +727,7 @@ a {
     }
     
     #formulario {
-        margin: 0 10px;
+        margin: 0;
         padding: 20px;
     }
 }
