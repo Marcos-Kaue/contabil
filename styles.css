@@ -22,7 +22,7 @@ html, body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 section {
@@ -245,6 +245,7 @@ a {
     display: flex;
     align-items: center;
     gap: 50px;
+    padding: 0 40px;
 }
 
 .about-image {
@@ -363,51 +364,6 @@ a {
 .credential i {
     color: #1e3a8a;
     margin-right: 8px;
-}
-
-/* Depoimentos Section */
-.testimonials {
-    background-color: #f8fafc;
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.testimonial-card {
-    background-color: white;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.testimonial-rating {
-    color: #f59e0b;
-    margin-bottom: 15px;
-}
-
-.testimonial-text {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.testimonial-author {
-    border-top: 1px solid #e5e7eb;
-    padding-top: 15px;
-}
-
-.author-name {
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.author-company {
-    font-size: 0.9rem;
-    color: #666;
 }
 
 /* Contato Section */
@@ -597,7 +553,7 @@ a {
     .container {
         width: 100%;
         max-width: 100%;
-        padding: 0 15px;
+        padding: 0 25px;
     }
     
     .hero .container {
@@ -611,6 +567,7 @@ a {
     
     .about .container {
         flex-direction: column;
+        padding: 0 30px;
     }
     
     .about-image {
@@ -627,7 +584,7 @@ a {
     .container {
         width: 100%;
         max-width: 100%;
-        padding: 0;
+        padding: 0 20px;
         margin: 0;
     }
     
@@ -675,21 +632,23 @@ a {
     }
 
     .services-grid,
-    .team-grid,
-    .testimonials-grid {
+    .team-grid {
         padding: 0;
     }
 
     .about .container,
-    .testimonials .container,
     .contact .container {
         padding: 0;
+    }
+
+    .about .container {
+        padding: 0 25px;
     }
 }
 
 @media (max-width: 576px) {
     .container {
-        padding: 0;
+        padding: 0 15px;
         margin: 0;
     }
     
@@ -707,13 +666,11 @@ a {
     }
     
     .services-grid,
-    .team-grid,
-    .testimonials-grid {
+    .team-grid {
         padding: 0;
     }
     
     .about .container,
-    .testimonials .container,
     .contact .container {
         padding: 0;
     }
@@ -729,5 +686,9 @@ a {
     #formulario {
         margin: 0;
         padding: 20px;
+    }
+
+    .about .container {
+        padding: 0 20px;
     }
 }
